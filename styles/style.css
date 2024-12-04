@@ -437,11 +437,13 @@ nav .home {
 
 @media (max-width: 900px) {
     header {
-        grid-template-columns: repeat(6, 1fr);
+        padding: 10px 0;
+        align-items: center;
+        width: 100%;
     }
 
     nav {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         text-align: left;
     }
@@ -477,7 +479,7 @@ nav .home {
     .about-description {
         text-align: left;
     }
-    
+
     .container-contact{
         padding: 0;
     }
@@ -593,8 +595,14 @@ nav .home {
 }
 
 @media (max-width: 600px) {
+    header{
+        padding: 10px 0;
+        align-items: center;
+        width: 80%;
+    }
+
     nav {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, 1fr);
         gap: 5px;
         text-align: left;
     }
@@ -687,12 +695,16 @@ nav .home {
 
 @media (max-width: 480px) {
     header {
-        grid-template-columns: repeat(4, 1fr);
+        padding: 10px 0;
+        align-items: center;
+        width: 80%;
+    
     }
 
     nav {
         grid-template-columns: repeat(2, auto);
-        text-align: left;
+        font-size: 10px;
+        justify-self: left;
     }
 
     h1 {
@@ -745,7 +757,6 @@ nav .home {
     .container-contact{
         padding: 0;
     }
-
 
     .contact {
         gap: 10px;
